@@ -1,15 +1,13 @@
 import React from 'react';
-import jsondata from './data.json'
 import './App.css';
 import FilterableProductTable from './components/FilterableProductTable/FilterableProductTable';
 
-function App() {
+const App = () => {
   return (
-    <div className="App" style={{margin:"1em"}}>
-      <h1 className="title">IronStore</h1>
-      <FilterableProductTable products={jsondata.data} />
+    <div className="app">
+      <FilterableProductTable />
     </div>
   );
-}
+};
 
 export default App;
